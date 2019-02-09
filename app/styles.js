@@ -49,7 +49,11 @@ export default styles = StyleSheet.create({
     justifyContent: 'flex-end',
     alignItems: 'center',
     paddingRight: 20,
-    paddingBottom: 10
+    ...ifIphoneX({
+      paddingBottom: 55
+    }, {
+        paddingBottom: 10
+      })
   },
   prev: {
     fontSize: 32

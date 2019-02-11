@@ -29,7 +29,7 @@ export const Folowers = props => {
                 <Text style={styles.folower_login}>{item.login}</Text>
                 <Image
                   style={styles.folower_avatar}
-                  source={{ url: item.avatar_url }}
+                  source={{ uri: item.avatar_url }}
                 />
               </View>
             )}

@@ -23,6 +23,7 @@ export const Folowers = props => {
           <FlatList
             style={styles.folowers}
             data={folowers}
+            keyExtractor={this._keyExtractor}
             renderItem={({ item }) => (
               <View style={styles.folower}>
                 <Text style={styles.folower_login}>{item.login}</Text>

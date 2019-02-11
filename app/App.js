@@ -65,6 +65,7 @@ export default class App extends Component {
         <FlatList
           style={styles.users}
           data={users}
+          keyExtractor={this._keyExtractor}
           renderItem={({ item }) => (
             <TouchableOpacity onPress={() => this.handlerSelectUser(item.login)} style={styles.user}>
               <Text style={styles.user_login}>{item.login}</Text>
@@ -77,7 +78,7 @@ export default class App extends Component {
                 onPress={() => { Linking.openURL(item.html_url) }} />
               <Image
                 style={styles.user_avatar}
-                source={{ url: item.avatar_url }}
+                source={{ uri: item.avatar_url }}
               />
             </TouchableOpacity>
           )}

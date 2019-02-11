@@ -40,8 +40,9 @@ export default styles = StyleSheet.create({
     width: width * (1 / 3)
   },
   user_avatar: {
-    width: 50,
-    height: 50,
+    width: 100,
+    height: 100,
+    borderWidth: 1
   },
   paginator: {
     width: width,
